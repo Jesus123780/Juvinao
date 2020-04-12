@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 :root {
   --background: #fff;
@@ -406,6 +407,14 @@ float: right;
 		opacity: 1;
 	}
 }
+
+
+@media screen and (max-width:1200px){
+  .medio{
+      padding: 100px;
+  }
+}
+
 .medio{
   clip-path: polygon(30% 0, 100% 0%, 75% 100%, 0% 100%);
 
@@ -1009,4 +1018,68 @@ figure:hover+span {
   float: left;
   width: 100%;
   height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url(https://scontent.fbog11-1.fna.fbcdn.net/v/t1.0-9/s960x960/79250317_2460580174212366_4300288966638174208_o.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_ohc=xpOQQOSBWY4AX-OHsUS&_nc_ht=scontent.fbog11-1.fna&_nc_tp=7&oh=5fcfcc63c388a141fc3c0ba114249a7c&oe=5EA2846E) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
 }
